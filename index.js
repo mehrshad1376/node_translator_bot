@@ -1,7 +1,7 @@
 
 //add telbot package //get token from botfather 
 const TelegramBot = require('node-telegram-bot-api');
-const token = '7005922695:AAGFfsvltcoJNZmlRgYv2fJDy_cViBjqsOM';
+const token = 'tel_bot_token';
 const bot = new TelegramBot(token, {polling: true});
 
 //import redis
