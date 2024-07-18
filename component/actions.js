@@ -22,7 +22,7 @@ async function getApi(bot,chatID,url,engine,desLang,msg)
 {
     console.log(engine)
     console.log(desLang)
-    const  res = await axios.get(`${url}?token=891910:644252b4a52d3&action=${engine}&lang=${desLang}&q=${msg}`)
+    const  res = await axios.get(`${url}?token={token}&action=${engine}&lang=${desLang}&q=${msg}`)
     bot.sendMessage(chatID , res.data.result)
     console.log(res.data)
 
